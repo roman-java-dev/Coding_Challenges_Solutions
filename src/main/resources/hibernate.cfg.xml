@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/my_shop?createDatabaseIfNotExist=true</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">YOUR LOGIN</property>
+        <property name="connection.password">YOUR PASSWORD</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <mapping class="org.example.task5.model.Category"/>
+        <mapping class="org.example.task5.model.Supplier"/>
+        <mapping class="org.example.task5.model.Product"/>
+    </session-factory>
+</hibernate-configuration>
